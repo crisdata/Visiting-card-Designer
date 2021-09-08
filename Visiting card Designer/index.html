@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Card Designer</title>
+     
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+     <h1 class="heading"> Diseña tu <span> Tarjeta de presentación</span> </h1> 
+
+     <div class="main">
+        <div class="card">
+            <div class="logo"></div>
+            <input type="text" class="name" maxlength="30" placeholder="Nombre del Negocio">
+            <input type="text" class="slogan" maxlength="50" placeholder="Slogan del Negocio">
+
+            <input type="text" class="website-link" placeholder="website">
+            <input type="text" class="email" placeholder="email">
+
+        </div>
+
+        <!-- settings carga de imagenes-->
+        <div class="setting">
+            <input type="file" accept="*image" id="upload" hidden>
+            <label for="upload" class="btn upload">Subir logo</label>
+
+            <!-- background container -->
+            <div class="backgrounds">
+                <img src="img/img1.jpg" class="active" alt="">
+                <img src="img/img2.jpg" alt="">
+                <img src="img/img3.jpg" alt="">
+                <img src="img/img4.jpg" alt="">
+                <img src="img/img5.jpg" alt="">
+                <img src="img/img2.jpg" alt="">
+            </div>
+
+            <a href="#" id="link" download="visiting card.png"></a>
+
+            <button class="btn download-btn">Descargar diseño</button>
+        </div>
+     </div>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+     <script src="app.js"></script>
+     
+</body>
+</html>
